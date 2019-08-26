@@ -84,6 +84,23 @@ public class Calender {
             callCal(months[j],maxday);
         }
 
+        // 5
+
+        while (true) {
+
+            Scanner scanner3 = new Scanner(System.in);
+            System.out.println("Enter the month");
+            int mon = scanner3.nextInt();
+            cal(mon);
+            callCal(mon,maxday);
+
+            if (mon==-1) {
+                System.out.println("Have a nice day!");
+                break;
+            }
+
+        }
+
 
 
 
