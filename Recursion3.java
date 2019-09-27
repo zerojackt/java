@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Recursion3 {
 
     public static void main(String[] args) {
@@ -48,5 +50,13 @@ public class Recursion3 {
             System.out.println(n%2);
         }
 
+    }
+
+    static void readFrom(int n, int[] data, Scanner scan) {
+        if(n==0) return;
+        else {
+            readFrom(n-1,data,scan);
+            data[n-1]=scan.nextInt();
+        }
     }
 }
